@@ -14,3 +14,4 @@ import loadTypekit from 'no-fout-typekit';
 loadTypekit('yourTypekitID');
 ```
 
+Make sure you load the script running no-fout-typekit synchronously or you'll still have a small FOUT.
