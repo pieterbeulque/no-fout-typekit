@@ -1,0 +1,33 @@
+{
+  "name": "no-fout-typekit",
+  "version": "1.0.0",
+  "description": "Typekit loading without FOUT on subsequent visits",
+  "source": "index.js",
+  "main": "dist/no-fout-typekit.js",
+  "eslintConfig": {
+    "extends": "@gentsagency/eslint-config"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "microbundle --target browser --format cjs --strict --name loadTypekit",
+    "lint": "eslint --fix index.js; exit 0;"
+  },
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "keywords": [
+    "typekit",
+    "fout",
+    "font",
+    "loading"
+  ],
+  "author": "Pieter Beulque <pieterbeulque@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@gentsagency/eslint-config": "^2.1.0",
+    "eslint": "^5.6.0",
+    "eslint-plugin-import": "^2.14.0",
+    "microbundle": "^0.6.0"
+  }
+}
